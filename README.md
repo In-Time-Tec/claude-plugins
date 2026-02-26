@@ -88,3 +88,8 @@ When a teammate opens the project in Claude Code, they'll be prompted to install
 - Use `${CLAUDE_PLUGIN_ROOT}` in hook commands and MCP configs — plugins are copied on install, so absolute paths break.
 - Bump the version in `plugin.json` whenever you change a plugin.
 - See [CLAUDE.md](./CLAUDE.md) for full development guide.
+
+## Official Docs
+
+- [Create plugins](https://code.claude.com/docs/en/plugins) — tutorials and practical usage for building plugins
+- [Plugins reference](https://code.claude.com/docs/en/plugins-reference) — complete technical specs, schemas, CLI commands, and debugging
