@@ -1,0 +1,10 @@
+{
+  "name": "itt-plugins",
+  "owner": {
+    "name": "In Time Tec"
+  },
+  "metadata": {
+    "description": "Internal Claude Code plugin marketplace for In Time Tec"
+  },
+  "plugins": []
+}
