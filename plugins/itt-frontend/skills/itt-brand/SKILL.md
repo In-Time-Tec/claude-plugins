@@ -1,3 +1,8 @@
+---
+name: itt-brand
+description: ITT brand guidelines for UI development. Activate when building, modifying, or reviewing React components, Tailwind styles, or theme configuration for In Time Tec projects.
+---
+
 # ITT Brand Guidelines
 
 Activate this skill whenever building, modifying, or reviewing any UI code for In Time Tec projects.

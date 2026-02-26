@@ -1,3 +1,7 @@
+---
+disable-model-invocation: true
+---
+
 # /itt-frontend:scaffold
 
 Scaffold a new Next.js project with ITT brand and stack configuration pre-applied.

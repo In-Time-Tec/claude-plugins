@@ -1,3 +1,7 @@
+---
+disable-model-invocation: true
+---
+
 # /itt-frontend:review
 
 Review code for ITT brand compliance and tech stack adherence.

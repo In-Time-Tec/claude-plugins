@@ -1,3 +1,8 @@
+---
+name: itt-stack
+description: ITT tech stack preferences and architecture decisions. Activate when setting up projects, choosing libraries, or reviewing project structure for In Time Tec frontend projects.
+---
+
 # ITT Tech Stack
 
 Activate this skill when setting up new projects, making architecture decisions, choosing libraries, or reviewing project structure for In Time Tec frontend projects.
