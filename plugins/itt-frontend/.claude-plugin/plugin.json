@@ -1,6 +1,6 @@
 {
   "name": "itt-frontend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ITT brand guidelines, tech stack preferences, and frontend tooling for Claude Code",
   "author": "In Time Tec",
   "tags": ["frontend", "brand", "react", "nextjs", "tailwind"]

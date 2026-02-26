@@ -45,9 +45,9 @@ const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat
 
 | Element | Radius | Tailwind Class |
 |---------|--------|----------------|
-| Cards | `30px` | `rounded-[30px]` |
-| Buttons | `15px` | `rounded-[15px]` |
-| Input fields | `40px` | `rounded-[40px]` |
+| Cards | `30px` | `rounded-card` |
+| Buttons | `15px` | `rounded-button` |
+| Input fields | `40px` | `rounded-input` |
 | Badges / Tags | `999px` | `rounded-full` |
 
 ### Shadows
@@ -71,15 +71,15 @@ const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat
 | Name | Value | Use |
 |------|-------|-----|
 | sm | `576px` | Mobile landscape |
-| md | `767px` | Tablet |
-| lg | `991px` | Small desktop |
-| xl | `1199px` | Standard desktop |
+| md | `768px` | Tablet |
+| lg | `992px` | Small desktop |
+| xl | `1200px` | Standard desktop |
 
 ## Anti-Patterns — Do NOT Use
 
 - **Default Tailwind blue** (`blue-500`, `blue-600`, etc.) — use brand oranges
 - **Inter, Arial, or system fonts** — use Archivo + Montserrat exclusively
-- **`rounded-lg`, `rounded-xl`, `rounded-2xl`** — use exact brand radii (`rounded-[30px]`, `rounded-[15px]`, `rounded-[40px]`)
+- **`rounded-lg`, `rounded-xl`, `rounded-2xl`** — use semantic brand radii (`rounded-card`, `rounded-button`, `rounded-input`)
 - **`shadow-md`, `shadow-lg`** — use exact brand shadows via custom utility or arbitrary value
 - **Generic gray palettes** (`gray-100` through `gray-900`) — map to brand grays (`#211E1E`, `#6b6b6b`, `#e5e5e5`, `#F5F5F5`)
 - **Hardcoded color values inline** — define in Tailwind theme config and use semantic tokens

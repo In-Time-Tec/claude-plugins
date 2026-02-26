@@ -30,7 +30,8 @@ When invoked, perform the following checks and report findings grouped by catego
 
 **Border Radius:**
 - Flag usage of generic Tailwind radius utilities (`rounded-lg`, `rounded-xl`, `rounded-2xl`)
-- Verify cards use `rounded-[30px]`, buttons use `rounded-[15px]`, inputs use `rounded-[40px]`
+- Flag arbitrary radius values (`rounded-[30px]`, `rounded-[15px]`, `rounded-[40px]`) that should use semantic tokens
+- Verify cards use `rounded-card`, buttons use `rounded-button`, inputs use `rounded-input`
 
 **Shadows:**
 - Flag usage of generic Tailwind shadows (`shadow-md`, `shadow-lg`, `shadow-xl`)
@@ -74,7 +75,7 @@ Present findings as a structured report:
 
 ✅ Colors: All using ITT brand tokens
 ⚠️ Typography: `Inter` font found in app/layout.tsx — replace with Archivo + Montserrat
-❌ Border Radius: 5 instances of `rounded-lg` found — use `rounded-[30px]` for cards, `rounded-[15px]` for buttons
+❌ Border Radius: 5 instances of `rounded-lg` found — use `rounded-card` for cards, `rounded-button` for buttons, `rounded-input` for inputs
 ✅ Shadows: Using custom ITT shadow utilities
 
 ### Stack Compliance

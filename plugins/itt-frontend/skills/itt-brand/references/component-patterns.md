@@ -5,14 +5,14 @@ Reference JSX patterns for common UI components using ITT brand tokens.
 ## Primary Button
 
 ```tsx
-<button className="bg-itt-orange hover:bg-itt-accent text-white font-body font-semibold px-6 py-3 rounded-[15px] transition-colors">
+<button className="bg-itt-orange hover:bg-itt-accent text-white font-body font-semibold px-6 py-3 rounded-button transition-colors">
   Get Started
 </button>
 ```
 
 With Shadcn:
 ```tsx
-<Button className="bg-itt-orange hover:bg-itt-accent rounded-[15px] font-body">
+<Button className="bg-itt-orange hover:bg-itt-accent rounded-button font-body">
   Get Started
 </Button>
 ```
@@ -20,7 +20,7 @@ With Shadcn:
 ## CTA Button
 
 ```tsx
-<button className="bg-itt-cta hover:bg-itt-orange text-white font-body font-bold px-8 py-4 rounded-[15px] transition-colors">
+<button className="bg-itt-cta hover:bg-itt-orange text-white font-body font-bold px-8 py-4 rounded-button transition-colors">
   Start Free Trial
 </button>
 ```
@@ -28,7 +28,7 @@ With Shadcn:
 ## Outline Button
 
 ```tsx
-<button className="border-2 border-itt-orange text-itt-orange hover:bg-itt-orange hover:text-white font-body font-semibold px-6 py-3 rounded-[15px] transition-colors">
+<button className="border-2 border-itt-orange text-itt-orange hover:bg-itt-orange hover:text-white font-body font-semibold px-6 py-3 rounded-button transition-colors">
   Learn More
 </button>
 ```
@@ -36,7 +36,7 @@ With Shadcn:
 ## Card
 
 ```tsx
-<div className="bg-white rounded-[30px] shadow-card p-8 hover:shadow-glow transition-shadow">
+<div className="bg-white rounded-card shadow-card p-8 hover:shadow-glow transition-shadow">
   <h3 className="font-heading font-bold text-xl text-itt-dark mb-3">
     Card Title
   </h3>
@@ -53,7 +53,7 @@ With Shadcn:
 <input
   type="text"
   placeholder="Enter your email"
-  className="w-full px-6 py-3 rounded-[40px] border border-itt-border bg-white font-body text-itt-dark placeholder:text-itt-gray focus:outline-none focus:ring-2 focus:ring-itt-orange/30 focus:border-itt-orange transition-colors"
+  className="w-full px-6 py-3 rounded-input border border-itt-border bg-white font-body text-itt-dark placeholder:text-itt-gray focus:outline-none focus:ring-2 focus:ring-itt-orange/30 focus:border-itt-orange transition-colors"
 />
 ```
 
@@ -66,7 +66,7 @@ With label:
   <input
     type="email"
     placeholder="you@example.com"
-    className="w-full px-6 py-3 rounded-[40px] border border-itt-border bg-white font-body text-itt-dark placeholder:text-itt-gray focus:outline-none focus:ring-2 focus:ring-itt-orange/30 focus:border-itt-orange transition-colors"
+    className="w-full px-6 py-3 rounded-input border border-itt-border bg-white font-body text-itt-dark placeholder:text-itt-gray focus:outline-none focus:ring-2 focus:ring-itt-orange/30 focus:border-itt-orange transition-colors"
   />
 </div>
 ```
@@ -101,7 +101,7 @@ With label:
       <a href="#" className="font-body text-itt-dark hover:text-itt-orange transition-colors">
         Pricing
       </a>
-      <button className="bg-itt-orange hover:bg-itt-accent text-white font-body font-semibold px-5 py-2 rounded-[15px] transition-colors">
+      <button className="bg-itt-orange hover:bg-itt-accent text-white font-body font-semibold px-5 py-2 rounded-button transition-colors">
         Sign Up
       </button>
     </div>
@@ -122,10 +122,10 @@ With label:
       and concisely using Montserrat body font.
     </p>
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <button className="bg-itt-cta hover:bg-itt-orange text-white font-body font-bold px-8 py-4 rounded-[15px] transition-colors">
+      <button className="bg-itt-cta hover:bg-itt-orange text-white font-body font-bold px-8 py-4 rounded-button transition-colors">
         Get Started Free
       </button>
-      <button className="border-2 border-itt-orange text-itt-orange hover:bg-itt-orange hover:text-white font-body font-semibold px-8 py-4 rounded-[15px] transition-colors">
+      <button className="border-2 border-itt-orange text-itt-orange hover:bg-itt-orange hover:text-white font-body font-semibold px-8 py-4 rounded-button transition-colors">
         Watch Demo
       </button>
     </div>
@@ -148,12 +148,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-<form className="bg-white rounded-[30px] shadow-card p-8 space-y-6 max-w-md mx-auto">
+<form className="bg-white rounded-card shadow-card p-8 space-y-6 max-w-md mx-auto">
   <div className="space-y-2">
     <Label className="font-body font-medium text-itt-dark pl-4">Name</Label>
     <Input
       placeholder="Your full name"
-      className="rounded-[40px] border-itt-border font-body focus-visible:ring-itt-orange/30"
+      className="rounded-input border-itt-border font-body focus-visible:ring-itt-orange/30"
     />
   </div>
   <div className="space-y-2">
@@ -161,10 +161,10 @@ import { Label } from "@/components/ui/label";
     <Input
       type="email"
       placeholder="you@example.com"
-      className="rounded-[40px] border-itt-border font-body focus-visible:ring-itt-orange/30"
+      className="rounded-input border-itt-border font-body focus-visible:ring-itt-orange/30"
     />
   </div>
-  <Button className="w-full bg-itt-orange hover:bg-itt-accent rounded-[15px] font-body font-semibold">
+  <Button className="w-full bg-itt-orange hover:bg-itt-accent rounded-button font-body font-semibold">
     Submit
   </Button>
 </form>

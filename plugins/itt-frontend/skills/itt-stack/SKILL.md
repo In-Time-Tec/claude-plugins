@@ -44,6 +44,8 @@ Activate this skill when setting up new projects, making architecture decisions,
 | Forms | **TanStack React Form** | Prefer over React Hook Form for new projects. |
 | ORM | **Drizzle ORM** | Schema-first, TypeScript-native. Use with Postgres. |
 | Database | **PostgreSQL** | Default database. Use Neon or Supabase for serverless. |
+| Server State | **TanStack Query** | Use for fetching, caching, and syncing server-derived data. |
+| Validation | **Zod** | Schema validation for forms, API responses, and env vars. |
 | Auth | **Better-auth** | Lightweight, self-hosted auth. Prefer over NextAuth for new projects. |
 
 ### Quality & Patterns
@@ -53,7 +55,7 @@ Activate this skill when setting up new projects, making architecture decisions,
 | Animation | **Motion** (formerly Framer Motion) | Use for page transitions, micro-interactions, scroll animations. |
 | FP Patterns | **Effect-ts** | For complex async flows, error handling, dependency injection. |
 | Testing | **Vitest** + **Testing Library** | Unit and component tests. Use Playwright for E2E. |
-| Linting (platform) | **Oxlint** + **Oxfmt** | Use for monorepo/platform projects with Bun. |
+| Linting (platform) | **Oxlint** + **Oxfmt** | Use for monorepo/platform projects with Bun. Swap to Prettier if formatting stability issues arise. |
 | Linting (standalone) | **ESLint** + **Prettier** | Use for standalone pnpm projects. |
 
 ## Decision Rules
@@ -69,7 +71,7 @@ Activate this skill when setting up new projects, making architecture decisions,
 - **CSS Modules or styled-components** — Use Tailwind CSS
 - **Axios** — Use native `fetch` (built into Next.js with caching support)
 - **Moment.js or date-fns** — Use `Intl.DateTimeFormat` or `Temporal` (when stable)
-- **Redux or Zustand for server state** — Use React Server Components and TanStack Query
+- **Redux or Zustand for server-derived state** — Use React Server Components and TanStack Query for data that originates from the server. Client-only UI state (modals, tabs) is fine in local component state.
 - **NextAuth / Auth.js** — Use Better-auth for new projects
 - **React Hook Form** — Use TanStack React Form for new projects
 - **Prisma** — Use Drizzle ORM

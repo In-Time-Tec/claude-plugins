@@ -36,9 +36,9 @@ Use this as the base Tailwind configuration for all ITT projects.
 
   /* Breakpoints */
   --breakpoint-sm: 576px;
-  --breakpoint-md: 767px;
-  --breakpoint-lg: 991px;
-  --breakpoint-xl: 1199px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
 ```
 
@@ -55,9 +55,9 @@ const config: Config = {
   theme: {
     screens: {
       sm: "576px",
-      md: "767px",
-      lg: "991px",
-      xl: "1199px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
     },
     extend: {
       colors: {

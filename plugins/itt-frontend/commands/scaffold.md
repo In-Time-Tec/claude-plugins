@@ -34,14 +34,14 @@ pnpm create next-app@latest <project-name> --typescript --tailwind --eslint --ap
 
 ```bash
 cd <project-name>
-bun add @tanstack/react-form drizzle-orm motion lucide-react
+bun add @tanstack/react-form @tanstack/react-query drizzle-orm better-auth zod motion lucide-react
 bun add -d drizzle-kit vitest @testing-library/react @testing-library/jest-dom @vitejs/plugin-react
 ```
 
 Or with pnpm:
 ```bash
 cd <project-name>
-pnpm add @tanstack/react-form drizzle-orm motion lucide-react
+pnpm add @tanstack/react-form @tanstack/react-query drizzle-orm better-auth zod motion lucide-react
 pnpm add -D drizzle-kit vitest @testing-library/react @testing-library/jest-dom @vitejs/plugin-react
 ```
 
@@ -110,7 +110,63 @@ export function cn(...inputs: ClassValue[]) {
 }
 ```
 
-### 9. Create `.env.example`
+### 9. Create boilerplate config files
+
+Create the following starter files:
+
+**`drizzle.config.ts`:**
+```ts
+import { defineConfig } from "drizzle-kit";
+
+export default defineConfig({
+  schema: "./lib/db/schema.ts",
+  out: "./drizzle",
+  dialect: "postgresql",
+  dbCredentials: {
+    url: process.env.DATABASE_URL!,
+  },
+});
+```
+
+**`lib/db/schema.ts`:**
+```ts
+import { pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+
+export const users = pgTable("users", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  email: text("email").notNull().unique(),
+  name: text("name"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+```
+
+**`lib/db/index.ts`:**
+```ts
+import { drizzle } from "drizzle-orm/node-postgres";
+import * as schema from "./schema";
+
+export const db = drizzle(process.env.DATABASE_URL!, { schema });
+```
+
+**`lib/auth.ts`:**
+```ts
+import { betterAuth } from "better-auth";
+import { db } from "./db";
+
+export const auth = betterAuth({
+  database: db,
+});
+```
+
+**`lib/validators.ts`:**
+```ts
+import { z } from "zod";
+
+// Add shared Zod schemas here
+export const emailSchema = z.string().email();
+```
+
+### 10. Create `.env.example`
 
 ```env
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
@@ -118,7 +174,7 @@ BETTER_AUTH_SECRET=
 BETTER_AUTH_URL=http://localhost:3000
 ```
 
-### 10. Summary
+### 11. Summary
 
 After completing all steps, print a summary:
 
@@ -129,8 +185,10 @@ Stack: Next.js 15 + React 19 + TypeScript + Tailwind CSS + Shadcn
 Fonts: Archivo (headings) + Montserrat (body)
 Theme: ITT brand colors, radii, and shadows applied
 Directories: Standard ITT layout created
+Config: drizzle.config.ts, lib/db/*, lib/auth.ts, lib/validators.ts
 
 Next steps:
   cd <project-name>
+  cp .env.example .env.local   # fill in your database URL and auth secret
   bun dev
 ```
