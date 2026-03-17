@@ -1,0 +1,8 @@
+{
+  "name": "self-heal",
+  "version": "1.0.0",
+  "description": "Autonomous codebase health review and self-healing cycle. Spawns parallel subagents to review performance, DRY, functional programming, documentation, tests, and code quality, then plans and implements the highest-priority fixes with test validation.",
+  "author": {
+    "name": "In Time Tec"
+  }
+}

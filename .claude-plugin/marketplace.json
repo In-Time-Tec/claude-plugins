@@ -11,6 +11,11 @@
       "name": "itt-frontend",
       "description": "ITT brand guidelines, tech stack preferences, and frontend tooling",
       "source": "./plugins/itt-frontend"
+    },
+    {
+      "name": "self-heal",
+      "description": "Autonomous codebase health review and self-healing cycle with parallel subagent reviews",
+      "source": "./plugins/self-heal"
     }
   ]
 }
