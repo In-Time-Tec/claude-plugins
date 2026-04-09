@@ -16,6 +16,11 @@
       "name": "self-heal",
       "description": "Autonomous codebase health review and self-healing cycle with parallel subagent reviews",
       "source": "./plugins/self-heal"
+    },
+    {
+      "name": "linkedin-strategy",
+      "description": "LinkedIn personal brand advisor \u2014 drafts posts, comments, and content calendars in your authentic voice",
+      "source": "./plugins/linkedin-strategy"
     }
   ]
 }
