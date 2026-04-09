@@ -146,3 +146,27 @@ voice from these -- the more samples, the sharper the matching.
 
 ### Sample 3
 [Paste here]
+
+---
+
+## LinkedIn Profile URLs
+
+<!-- Add your LinkedIn profile URL and any profiles you want to monitor. -->
+<!-- The skill uses these when you ask it to "refresh my LinkedIn feed"   -->
+<!-- or "fetch posts from [name]".                                         -->
+
+**My profile:**
+my_profile_url: https://www.linkedin.com/in/[your-linkedin-handle]
+
+**Profiles to watch:**
+<!-- One per line. Add a label so the skill knows who's who. -->
+watch_profiles:
+  - label: "[Person Name – Title, Company]"
+    url: https://www.linkedin.com/in/[their-handle]
+  - label: "[Person Name – Title, Company]"
+    url: https://www.linkedin.com/in/[their-handle]
+
+<!-- Tips:                                                                 -->
+<!-- - Go to someone's LinkedIn profile and copy the URL from the browser  -->
+<!-- - The /recent-activity/shares/ path shows their posts directly        -->
+<!-- - You can add competitors, industry thought leaders, or colleagues    -->
