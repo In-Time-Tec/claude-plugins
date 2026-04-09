@@ -20,6 +20,7 @@ Internal Claude Code plugin marketplace for In Time Tec.
 | Plugin | Description | Skills | Commands |
 |--------|-------------|--------|----------|
 | [itt-frontend](./plugins/itt-frontend/) | Brand guidelines, tech stack, and frontend tooling | `itt-brand`, `itt-stack` | `/itt-frontend:scaffold`, `/itt-frontend:review` |
+| [linkedin-strategy](./plugins/linkedin-strategy/) | LinkedIn personal brand advisor and content strategist | `linkedin-strategy` | — |
 
 ## Auto-Install for Your Team
 
