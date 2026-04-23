@@ -1,0 +1,8 @@
+{
+  "name": "experiment-harness",
+  "version": "1.0.0",
+  "description": "Run controlled multi-arm experiments on AI/LLM agent behavior. Orchestrator spawns per-phase arm subagents in isolated git worktrees, injects each arm's variant stimulus, runs uniform validation, invokes a blind reviewer, and compiles a comparison report. Pure convention + two skills; no custom runner.",
+  "author": {
+    "name": "In Time Tec"
+  }
+}

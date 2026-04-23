@@ -16,6 +16,11 @@
       "name": "self-heal",
       "description": "Autonomous codebase health review and self-healing cycle with parallel subagent reviews",
       "source": "./plugins/self-heal"
+    },
+    {
+      "name": "experiment-harness",
+      "description": "Run controlled multi-arm experiments on AI/LLM agent behavior: orchestrator spawns per-phase arm subagents in isolated git worktrees, injects each arm's variant stimulus, runs uniform validation, invokes a blind reviewer, and compiles a comparison report",
+      "source": "./plugins/experiment-harness"
     }
   ]
 }

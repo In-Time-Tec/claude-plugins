@@ -20,6 +20,8 @@ Internal Claude Code plugin marketplace for In Time Tec.
 | Plugin | Description | Skills | Commands |
 |--------|-------------|--------|----------|
 | [itt-frontend](./plugins/itt-frontend/) | Brand guidelines, tech stack, and frontend tooling | `itt-brand`, `itt-stack` | `/itt-frontend:scaffold`, `/itt-frontend:review` |
+| [self-heal](./plugins/self-heal/) | Autonomous codebase health review and self-healing cycle | `self-heal` | — |
+| [experiment-harness](./plugins/experiment-harness/) | Run controlled multi-arm experiments on AI/LLM agent behavior | `experiment-orchestrator`, `experiment-reviewer` | — |
 
 ## Auto-Install for Your Team
 
